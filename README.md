@@ -2,4 +2,4 @@
 
 Here I try different data structure problem.
 
-- [Unival] (..tree/master/unival)
+- [Unival](../tree/master/unival)
