@@ -2,14 +2,11 @@ def compute(l):
     l2 = []
     for i in range(0, len(l)):
         l1 = []
-        sumi = l[i]
+        sumi = 0
 
-        for j in range(i+1, len(l)):
+        for j in range(i, len(l)):
             sumi = sumi + l[j]
-            if sumi>l[i]:
-                l1.append(sumi)
-            else:
-                return l[i]
+            l1.append(sumi)
 
         if l1 != []:
             l2.append(l1)
@@ -17,4 +14,4 @@ def compute(l):
 
 
 l = [-1,-2,-3,-4]
-print(compute(l))
+compute(l)
