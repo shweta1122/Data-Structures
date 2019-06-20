@@ -6,12 +6,15 @@ def compute(l):
 
         for j in range(i+1, len(l)):
             sumi = sumi + l[j]
-            l1.append(sumi)
+            if sumi>l[i]:
+                l1.append(sumi)
+            else:
+                return l[i]
 
         if l1 != []:
             l2.append(l1)
     print(max(list(map(lambda x: max(x), l2))))
 
 
-l = [-5, -1, 2, 10, -2, -3, -4, 5, 6, 3, -5]
-compute(l)
+l = [-1,-2,-3,-4]
+print(compute(l))
